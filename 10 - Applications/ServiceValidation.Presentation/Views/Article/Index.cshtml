@@ -1,0 +1,25 @@
+﻿@model ServiceValidation.Presentation.Models.Article.Index
+
+<h2>Liste des articles</h2>
+<a asp-controller="Article" asp-action="Create" class="btn btn-primary btn-block">Ajouter un nouvel article</a>
+
+<div class="table-responsive">
+    <table class="table table-sm">
+        <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Description</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var article in Model.Articles)
+        {
+            <tr>
+                <td>@article.Name</td>
+                <td>@article.Description</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>

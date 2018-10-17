@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\20 - Services\ServiceValidation.Service\ServiceValidation.Service.csproj" />
+    <ProjectReference Include="..\..\30 - Datas\ServiceValidation.Repo\ServiceValidation.Repo.csproj" />
+    <ProjectReference Include="..\..\40 - Core\ServiceValidation.Core\ServiceValidation.Core.csproj" />
+  </ItemGroup>
+
+</Project>
